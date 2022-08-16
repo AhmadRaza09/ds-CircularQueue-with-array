@@ -91,8 +91,14 @@ public class CircularQueue {
         return value;
     }
 
-    public int front() throws Exception{
-        if(isEmpty()){
+    /**
+     * This method will return the element form the queue at beginningOfQueue position
+     *
+     * @return integer
+     * @throws if queue is empty then throw Exceptions
+     */
+    public int front() throws Exception {
+        if (isEmpty()) {
             throw new Exception("Queue is Empty");
         }
 
