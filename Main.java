@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("made circular queue");
+        CircularQueue circularQueue = new CircularQueue(5);
     }
 }
