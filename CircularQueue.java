@@ -91,4 +91,12 @@ public class CircularQueue {
         return value;
     }
 
+    public int front() throws Exception{
+        if(isEmpty()){
+            throw new Exception("Queue is Empty");
+        }
+
+        return arr[beginningOfQueue];
+    }
+
 }

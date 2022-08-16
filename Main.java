@@ -16,46 +16,12 @@ public class Main {
         System.out.println(result);
         result = circularQueue.dequeue();
         System.out.println(result);
-        result = circularQueue.dequeue();
+        result = circularQueue.front();
         System.out.println(result);
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        System.out.println("--------------------- Enqueue Again");
-        circularQueue.enqueue(6);
-        circularQueue.enqueue(7);
-        circularQueue.enqueue(8);
-        circularQueue.enqueue(9);
-        circularQueue.enqueue(10);
-
-        System.out.println("----------------------Dequeue Again");
-        result = circularQueue.dequeue();
+        result = circularQueue.front();
         System.out.println(result);
 
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        circularQueue.enqueue(11);
-
-        circularQueue.enqueue(12);
-
-
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        result = circularQueue.dequeue();
-        System.out.println(result);
-
-        result = circularQueue.dequeue();
+        result = circularQueue.front();
         System.out.println(result);
 
     }
