@@ -60,4 +60,35 @@ public class CircularQueue {
         size = size + 1;
     }
 
+    /**
+     * This method will remove the element of the queue from the beginningOfQueue position
+     *
+     * @return value
+     * @throws if queue is empty before removal of element then throw exception
+     */
+    public int dequeue() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Queue is Empty");
+        }
+
+        int value = arr[beginningOfQueue];
+
+        //if queue point to the last index then after removal change its index
+        if (beginningOfQueue == arr.length - 1) {
+            beginningOfQueue = -1;
+        }
+        beginningOfQueue = beginningOfQueue + 1;
+
+        //decrease the size of the queue
+        size = size - 1;
+
+        //if empty now then initiallize the beginningOfQueue and topOfQueue as the intial state
+        if (isEmpty()) {
+            beginningOfQueue = -1;
+            topOfQueue = -1;
+        }
+
+        return value;
+    }
+
 }
