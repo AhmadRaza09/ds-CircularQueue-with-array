@@ -23,4 +23,13 @@ public class CircularQueue {
         return size == 0;
     }
 
+    /**
+     * This method will the the queue isFull or not
+     *
+     * @return boolean
+     */
+    public boolean isFull() {
+        return size == arr.length;
+    }
+
 }
