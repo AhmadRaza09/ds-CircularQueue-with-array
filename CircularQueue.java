@@ -20,10 +20,7 @@ public class CircularQueue {
      * @return boolean
      */
     public boolean isEmpty() {
-        if (beginningOfQueue == -1 && topOfQueue == -1) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
 
 }
